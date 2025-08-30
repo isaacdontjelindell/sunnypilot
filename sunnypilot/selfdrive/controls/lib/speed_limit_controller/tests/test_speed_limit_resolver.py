@@ -38,7 +38,7 @@ def setup_sm_mock(mocker: MockerFixture):
     'speedLimitAheadDistance': 0.,
   }, mocker)
   gps_data = create_mock({
-    'unixTimestampMillis': time.monotonic()* 1e3,
+    'unixTimestampMillis': time.monotonic() * 1e3,
   }, mocker)
   sm_mock = mocker.MagicMock()
   sm_mock.__getitem__.side_effect = lambda key: {

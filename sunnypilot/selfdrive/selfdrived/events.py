@@ -147,34 +147,6 @@ EVENTS_SP: dict[int, dict[str, Alert | AlertCallbackType]] = {
     ET.WARNING: NoEntryAlert("Pedal Pressed")
   },
 
-  EventNameSP.speedLimitPreActive: {
-    ET.WARNING: Alert(
-      "",
-      "",
-      AlertStatus.normal, AlertSize.none,
-      Priority.MID, VisualAlert.none, AudibleAlert.none, .45),  # TODO-SP: AudibleAlert.promptSingleLow
-  },
-
-  EventNameSP.speedLimitActive: {
-    ET.WARNING: Alert(
-      "Set speed changed to match posted speed limit",
-      "",
-      AlertStatus.normal, AlertSize.small,
-      Priority.LOW, VisualAlert.none, AudibleAlert.none, 3.),
-  },
-
-  EventNameSP.speedLimitConfirmed: {
-    ET.WARNING: Alert(
-      "",
-      "",
-      AlertStatus.normal, AlertSize.none,
-      Priority.MID, VisualAlert.none, AudibleAlert.none, .45),  # TODO-SP: AudibleAlert.promptSingleHigh
-  },
-
-  EventNameSP.speedLimitValueChange: {
-    ET.WARNING: speed_limit_adjust_alert,
-  },
-
   EventNameSP.laneTurnLeft: {
     ET.WARNING: Alert(
       "Turning Left",
@@ -189,5 +161,18 @@ EVENTS_SP: dict[int, dict[str, Alert | AlertCallbackType]] = {
       "",
       AlertStatus.normal, AlertSize.small,
       Priority.LOW, VisualAlert.none, AudibleAlert.none, 1.),
-  }
+  },
+
+  EventNameSP.speedLimitActive: {
+    ET.WARNING: Alert(
+      "Set speed changed to match posted speed limit",
+      "",
+      AlertStatus.normal, AlertSize.small,
+      Priority.LOW, VisualAlert.none, AudibleAlert.none, 3.),
+  },
+
+  EventNameSP.speedLimitValueChange: {
+    ET.WARNING: speed_limit_adjust_alert,
+  },
+
 }

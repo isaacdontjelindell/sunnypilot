@@ -77,7 +77,7 @@ class SpeedLimitResolver:
     gps_data = sm[self._gps_location_service]
     map_data = sm['liveMapDataSP']
 
-    distance_since_fix = self._v_ego * (time.monotonic()- gps_data.unixTimestampMillis * 1e-3)
+    distance_since_fix = self._v_ego * (time.monotonic() - gps_data.unixTimestampMillis * 1e-3)
     distance_to_speed_limit_ahead = max(0., map_data.speedLimitAheadDistance - distance_since_fix)
 
     self._limit_solutions[Source.map_data] = speed_limit
