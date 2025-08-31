@@ -174,6 +174,7 @@ struct LongitudinalPlanSP @0xf35cc4560bbf6ec2 {
     preActive @2;
     adapting @3; # Reducing speed to match new speed limit.
     active @4; # Cruising at speed limit.
+    pending @5; # Awaiting new speed limit.
   }
 }
 
