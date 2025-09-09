@@ -19,6 +19,7 @@ UIStateSP::UIStateSP(QObject *parent) : UIState(parent) {
     "pandaStates", "carParams", "driverMonitoringState", "carState", "driverStateV2",
     "wideRoadCameraState", "managerState", "selfdriveState", "longitudinalPlan",
     "modelManagerSP", "selfdriveStateSP", "longitudinalPlanSP", "backupManagerSP",
+    "liveMapDataSP","longitudinalPlanSP",
     "carControl", "gpsLocationExternal", "gpsLocation", "liveTorqueParameters",
     "carStateSP", "liveParameters"
   });
