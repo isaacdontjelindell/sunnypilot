@@ -3,6 +3,6 @@
 # 	pushurl = ssh://git@gitlab.com/sunnypilot/public/sunnypilot-new-lfs.git
 # 	locksverify = false
 [lfs]
-	url = git@github.com:isaacdontjelindell/sunnypilot.git
+	url = https://github.com/isaacdontjelindell/sunnypilot.git/info/lfs
 	pushurl = git@github.com:isaacdontjelindell/sunnypilot.git
 	locksverify = false
