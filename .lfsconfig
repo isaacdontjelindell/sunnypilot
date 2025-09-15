@@ -1,4 +1,8 @@
+# [lfs]
+# 	url = https://gitlab.com/sunnypilot/public/sunnypilot-new-lfs.git/info/lfs
+# 	pushurl = ssh://git@gitlab.com/sunnypilot/public/sunnypilot-new-lfs.git
+# 	locksverify = false
 [lfs]
-	url = https://gitlab.com/sunnypilot/public/sunnypilot-new-lfs.git/info/lfs
-	pushurl = ssh://git@gitlab.com/sunnypilot/public/sunnypilot-new-lfs.git
+	url = git@github.com:isaacdontjelindell/sunnypilot.git
+	pushurl = git@github.com:isaacdontjelindell/sunnypilot.git
 	locksverify = false
